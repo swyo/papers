@@ -1,3 +1,9 @@
-print('hello world in python!')
-x = 10
-assert x == 10
+import unittest
+
+
+class TestHello(unittest.TestCase):
+
+    def hello(self):
+        print("Hellow world in python!")
+        x = 10
+        self.assertTrue(x == 10)
